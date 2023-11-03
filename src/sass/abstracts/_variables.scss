@@ -1,0 +1,13 @@
+// COLORS
+// PRIMARY
+$clr-black: hsl(0, 100%, 0%);
+$clr-blue-dark: hsl(233, 26%, 24%);
+$clr-blue-cyan: hsl(192, 70%, 51%);
+$clr-green-lime: hsl(136, 65%, 51%);
+// SECONDARY
+$clr-white: hsl(0, 0%, 100%);
+$clr-gray-1: hsl(0, 0%, 98%);
+$clr-gray-2: hsl(220, 16%, 96%);
+$clr-gray-3: hsl(233, 8%, 62%);
+
+$main-gradient: linear-gradient(to right, $clr-green-lime, $clr-blue-cyan);

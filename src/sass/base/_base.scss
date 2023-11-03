@@ -1,0 +1,65 @@
+@use "../abstracts/" as *;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem = 9px
+  }
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px
+  }
+  @include respond(big-scr) {
+    font-size: 75%; //1rem = 12px
+  }
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: $clr-gray-3;
+
+  //
+  min-height: 100vh;
+}
+
+//
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+}
+input,
+button,
+textarea,
+select,
+a {
+  font: inherit;
+}
+
+// Containers
+.container {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  width: 95%;
+  max-width: 111rem;
+}
